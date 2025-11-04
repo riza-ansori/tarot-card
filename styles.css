@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container {
+    width: 800px;
+    padding-top: 50px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.deck {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    height: 490px;
+    overflow: hidden;
+    padding: 20px;
+}
+.card {
+    width: 79px;
+    height: 143px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+}
+.card-back {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.hand {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 490px;
+    padding: 20px;
+    overflow: hidden;
+}
+#hand > a {
+    width: 79px;
+    height: 143px;
+    position: relative;
+    transition: 0.5s ease;
+}
+#hand > a:hover {
+    scale: 1.2;
+    z-index: 1000;
+}
+#shuffle-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
