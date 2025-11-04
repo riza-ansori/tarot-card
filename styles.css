@@ -33,6 +33,7 @@ h1 {
     height: 490px;
     overflow: hidden;
     padding: 20px;
+    z-index: -1;
 }
 .card {
     width: 79px;
